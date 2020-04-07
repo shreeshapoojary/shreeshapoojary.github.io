@@ -13,7 +13,7 @@ body {
 #header-title{
   display: block;
   float: middle;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: bold;
   font-family: 'Spicy Rice', cursive;
 
@@ -142,6 +142,7 @@ ul{
   display: flex;
   vertical-align: middle;
   margin-left: 190px;
+  margin-bottom: 200px;
 }
 ul li{
   position: relative;
@@ -248,7 +249,7 @@ ul li:nth-child(6):hover{
 .topnav{
   background-color:#22262F;
   overflow: hidden;
-  margin-left: 320px;
+  margin-left: 270px;
 }
 .topnav a{
   float: left;
@@ -257,7 +258,7 @@ ul li:nth-child(6):hover{
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
 }
 .topnav a:hover{
   background-color: #ddd;
