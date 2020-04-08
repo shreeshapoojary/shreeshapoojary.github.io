@@ -117,7 +117,7 @@ a:hover{
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 300px;
+  margin-bottom: 350px;
 }
 .about-title{
   color:#6600cc;
@@ -143,7 +143,7 @@ ul{
   display: flex;
   vertical-align: middle;
   margin-left: 190px;
-  margin-bottom: 300px;
+  margin-bottom: 350px;
 }
 ul li{
   position: relative;
