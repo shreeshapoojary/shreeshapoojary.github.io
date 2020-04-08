@@ -6,8 +6,8 @@ body {
 
 #header {
   background-color: #9933ff;
-  height: 150px;
-  line-height: 150px;
+  height: 200px;
+  line-height: 200px;
 }
 
 #header-title{
@@ -15,8 +15,8 @@ body {
   float: middle;
   font-size: 80px;
   font-weight: bold;
-  font-family: 'Spicy Rice', cursive;
-
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 #header-nav{
@@ -55,7 +55,7 @@ body {
 
 #footer{
   background-color: black;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .column{
@@ -117,7 +117,7 @@ a:hover{
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 200px;
+  margin-bottom: 500px;
 }
 .about-title{
   color:#6600cc;
@@ -142,7 +142,7 @@ ul{
   display: flex;
   vertical-align: middle;
   margin-left: 190px;
-  margin-bottom: 200px;
+  margin-bottom: 500px;
 }
 ul li{
   position: relative;
