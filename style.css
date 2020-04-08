@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-  background-color: #9933ff;
+  background-color: #66b032;
   height: 200px;
   line-height: 200px;
 }
@@ -117,7 +117,7 @@ a:hover{
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 500px;
+  margin-bottom: 300px;
 }
 .about-title{
   color:#6600cc;
@@ -128,7 +128,8 @@ a:hover{
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-left:5px
+  margin-left:5px;
+  margin-top:50px;
 }
 body{
   display: 0;
@@ -142,7 +143,7 @@ ul{
   display: flex;
   vertical-align: middle;
   margin-left: 190px;
-  margin-bottom: 500px;
+  margin-bottom: 300px;
 }
 ul li{
   position: relative;
@@ -265,7 +266,7 @@ ul li:nth-child(6):hover{
   color: black;
 }
 .topnav a:active{
-  background-color:#6600cc;
+  background-color:solid green;
   color: white;
 }
 .column{
@@ -286,10 +287,10 @@ ul li:nth-child(6):hover{
   padding: 10px;
   text-align: center;
   font-size: 30px;
-  background-color: #9933ff;
+  background-color: #66b032;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 15px solid purple;
+  border: 15px solid green;
   font-family: 'Spicy Rice', cursive;
   color: white;
   outline: 0;
@@ -300,10 +301,10 @@ ul li:nth-child(6):hover{
   padding: 10px;
   text-align: center;
   font-size: 30px;
-  background-color: #9933ff;
+  background-color: #66b032;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 15px solid purple;
+  border: 15px solid green;
   font-family: 'Spicy Rice', cursive;
   color: white;
   outline: 0;
@@ -314,10 +315,10 @@ ul li:nth-child(6):hover{
   padding: 10px;
   text-align: center;
   font-size: 30px;
-  background-color:#9933ff;
+  background-color:#66b032;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 15px solid purple;
+  border: 15px solid green;
   font-family: 'Spicy Rice', cursive;
   color: white;
   outline: 10px;
