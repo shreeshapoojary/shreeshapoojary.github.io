@@ -125,7 +125,7 @@ a:hover{
 }
 .link-title{
   color: #6600cc;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -143,19 +143,19 @@ body{
 ul{
   display: flex;
   vertical-align: middle;
-  margin-left: 190px;
+  margin-left: 130px;
   margin-bottom: 400px;
 }
 ul li{
   position: relative;
   display: block;
   color: #666;
-  font-size: 30px;
-  height: 60px;
-  width: 60px;
+  font-size: 50px;
+  height: 80px;
+  width: 80px;
   background: #171515;
-  line-height: 60px;
-  border-radius: 50%;
+  line-height: 80px;
+  border-radius: 80%;
   margin: 0 15px;
   cursor: pointer;
   transition: .5s;
@@ -251,7 +251,7 @@ ul li:nth-child(6):hover{
 .topnav{
   background-color:#22262F;
   overflow: hidden;
-  margin-left: 270px;
+  margin-left: 280px;
 }
 .topnav a{
   float: left;
@@ -260,7 +260,7 @@ ul li:nth-child(6):hover{
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 28px;
 }
 .topnav a:hover{
   background-color: #ddd;
@@ -324,6 +324,7 @@ ul li:nth-child(6):hover{
   color: white;
   outline: 10px;
   border-radius: 30px;
+  margin-top: -180px;
 
 }
 .button button{
@@ -338,4 +339,19 @@ ul li:nth-child(6):hover{
     margin-left: 10px;
     font-family: 'Lobster', cursive;
     font-size: 20px;
+}
+
+.button1 button{
+    width: 150px;
+    padding:10px;
+    color:white;
+    background-color: #123456;
+    border: 3px solid;
+    outline: 0;
+    border-radius: 10px;
+    margin: 50px 0px 0px 100px;
+    margin-left: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    margin-bottom: 200px;
 }
