@@ -104,7 +104,10 @@ a:hover{
       border-radius: 100%;
       box-shadow: 0 0 10px 2px #ffffff;
 }
-
+.name{
+  font-size: 40px;
+  color: white;
+}
 .post-date{
   color: #D2D2D2;
   font-size: 30px;
@@ -114,7 +117,7 @@ a:hover{
 }
 .post-title{
   color: #D2D2D2;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -278,7 +281,7 @@ ul li:nth-child(6):hover{
 }
 .about-content{
   color: #D2D2D2;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
