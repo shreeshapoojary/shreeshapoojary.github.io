@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-  background-color: #66b032;
+  background-color: #8000ff;
   height: 200px;
   line-height: 200px;
 }
@@ -63,12 +63,6 @@ body {
   min-width: 300px;
   display: inline-block;
   vertical-align: top;
-}
-
-#footer h4{
-  color:red;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 #footer p{
@@ -291,10 +285,10 @@ ul li:nth-child(6):hover{
   padding: 10px;
   text-align: center;
   font-size: 30px;
-  background-color: #66b032;
+  background-color: #8000ff;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 15px solid green;
+  border: 15px solid purple;
   font-family: 'Spicy Rice', cursive;
   color: white;
   outline: 0;
@@ -305,10 +299,10 @@ ul li:nth-child(6):hover{
   padding: 10px;
   text-align: center;
   font-size: 30px;
-  background-color: #66b032;
+  background-color: #8000ff;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 15px solid green;
+  border: 15px solid purple;
   font-family: 'Spicy Rice', cursive;
   color: white;
   outline: 0;
@@ -319,10 +313,10 @@ ul li:nth-child(6):hover{
   padding: 10px;
   text-align: center;
   font-size: 30px;
-  background-color:#66b032;
+  background-color:#8000ff;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 15px solid green;
+  border: 15px solid purple;
   font-family: 'Spicy Rice', cursive;
   color: white;
   outline: 10px;
