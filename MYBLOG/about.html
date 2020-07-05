@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width;initial-scale=1.0;"/>
+      <title>My Blog</title>
+      <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!--it is header-->
+    <div id="header">
+      <div class="container">
+        <a id="header-title",href="index.html">My Blog</a>
+      </div>
+    </div>
+    <!--it is content-->
+    <div id="content">
+      <div class="container">
+        <div class="topnav"> <!--top navigation-->
+          <a class="active" href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="cont.html">CONTACT</a>
+        </div>
+        <div class="Post-rounded">
+            <img src="img/shree.jpg" height="300px",width="300px"/>
+        </div>
+            <h2 class="name">SHREESHA POOJARY</h2>
+          <h1 class="about-title"><u>About me</u></h1>
+          <div class="about-content">
+            <p>Father name : Rama poojari</p>
+            <p>Mother name : Sujatha</p>
+            <p>DOB:13/08/2000</p>
+          </div>
+
+          <!--button for College-->
+          <div class="button">
+            <button onclick="myFunction1()">DEGREE</button>
+          </div>
+
+          <div id="myDIV1">
+              <p style="font-family: 'Spicy Rice', cursive;" >Bhandarkars' Arts and Science College, Kundapura</p>
+              <p style="font-family: 'Acme', sans-serif;" >Bachelor of Computer Application(BCA)</p>
+          </div>
+
+          <script>
+            function myFunction1()
+             {
+                var x = document.getElementById("myDIV1");
+                if (x.style.display === "none")
+                {
+                  x.style.display = "block";
+                }
+                else {
+                        x.style.display = "none";
+                      }
+            }
+          </script>
+
+
+          <div class="button">
+            <button onclick="myFunction2()"> PUC </button>
+          </div>
+
+          <div id="myDIV2">
+              <p style="font-family: 'Spicy Rice', cursive;" >Bhandarkars' Arts and Science College, Kundapura</p>
+              <p style="font-family: 'Acme', sans-serif;" >Pre University College(PUC)</p>
+          </div>
+
+            <script>
+              function myFunction2()
+               {
+                  var x = document.getElementById("myDIV2");
+                  if (x.style.display === "none")
+                  {
+                    x.style.display = "block";
+                  }
+                  else {
+                          x.style.display = "none";
+                        }
+              }
+            </script>
+
+          <div class="button1">
+            <button onclick="myFunction3()"> SSLC </button>
+          </div>
+            <div id="myDIV3">
+              <p style="font-family: 'Spicy Rice', cursive;" >Viveka Boys High School, Kota</p>
+              <p style="font-family: 'Acme', sans-serif;" >Secondary School Leaving Certificate(SSLC)</p>
+          </div>
+
+          <script>
+            function myFunction3()
+             {
+                var x = document.getElementById("myDIV3");
+                if (x.style.display === "none")
+                {
+                  x.style.display = "block";
+                }
+                else {
+                        x.style.display = "none";
+                      }
+            }
+          </script>
+
+      </div>
+    </div>
+
+    <!--it is footer-->
+    <div id="footer">
+      <div class="container">
+        <div class="column">
+            <h2  style="margin-top:70px">Copyright 2020</h2>
+            <h2>Designed by <a href="https://instagram.com/shreesh_poojary">@shreesh_poojary</a></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
