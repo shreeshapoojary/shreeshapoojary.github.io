@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+       <link rel="stylesheet" href="static/css/style.css">
+      <title>MEDIZONE</title>
+       <style>
+
+          * {box-sizing: border-box;}
+          body {font-family: Verdana, sans-serif;}
+          .mySlides {display: none;}
+          img {vertical-align: middle;}
+
+          /* Slideshow container */
+          .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin-left: 100px;
+          }
+
+          /* Caption text */
+          .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            margin-left: 175px;
+          }
+
+          /* Number text (1/3 etc) */
+          .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+
+          /* The dots/bullets/indicators */
+          .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            margin-bottom: 200px;
+          }
+
+          .active {
+            background-color: #717171;
+          }
+
+          .image{
+             width:1160px;
+             height:450px;
+          }
+
+          /* Fading animation */
+          .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 5s;
+            animation-name: fade;
+            animation-duration: 5s;
+          }
+
+          @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+
+          @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+
+          .type{
+            color: black;
+          }
+
+/* On smaller screens, decrease text size */
+@media (max-width: 870px){
+
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 800px;
+      position: relative;
+      margin-left: 0px;
+      margin-right: -20px;
+      padding: 30px;
+      padding-bottom: 0px;
+      width: 100%;
+    }
+
+    /* Caption text */
+    .text {
+      color: #000000;
+      font-size: 15px;
+      padding: 10px;
+      position: absolute;
+      bottom: 10px
+      width: 100%;
+      text-align: center;
+      margin-left: -45px;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin-left: -5px;
+      margin-right: 20px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      margin-bottom: 200px;
+    }
+
+    .type{
+      color: red;
+    }
+
+    .image{
+      width: 700px;
+      height: 400px;
+    }
+}
+
+@media (max-width: 570px){
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 500px;
+    position: relative;
+    padding: 0px;
+    margin:auto;
+    width: 100%;
+    padding-left: 30px
+  }
+
+  /* Caption text */
+  .text {
+    color: #000000;
+    font-size: 10px;
+    padding: 0px;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    margin-left: -30px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 5px;
+    width: 5px;
+    margin-left: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 200px;
+  }
+
+  .type{
+    color: green;
+  }
+
+  .image{
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+  }
+}
+
+       </style>
+   </head>
+   <body>
+
+
+      <!-- Navbar here -->
+      <nav class="navbar navbar-expand-md navbar-dark" style="color:black; background-color:grey">
+        <th style="width:500px; height:500px; color:green;"><b>&nbsp + </b></th>
+        <a class="navbar-brand" href="#"></a><b>MEDIZONE</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>&nbsp&nbsp
+        <div class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"></li>
+                    <button type="button" class="butt" style="border-style:solid;"><b>Home</b></button>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}"><button type="button" class="butt" style="border-style:solid;"><b> Login</b></button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'registration' %}"><button type="button" class="butt" style="border-style:solid;"><b>Register</b></button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+      <!-- Future Content here -->
+      <div class="type">
+      <h2><b>Be Healthy Always</b></h2>
+      <p>Buy our product to keep healthy</p>
+    </div>
+
+      <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img class="image" src="https://st.depositphotos.com/1018611/2846/i/600/depositphotos_28468935-stock-photo-syringe-and-different-pills.jpg">
+        <div class="text">Caption one</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img class="image" src="https://static8.depositphotos.com/1291951/802/i/600/depositphotos_8020493-stock-photo-in-the-world-of-drugs.jpg" >
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img class="image" src="https://static4.depositphotos.com/1000142/347/i/600/depositphotos_3478817-stock-photo-pharmaceutical-products.jpg">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img class="image" src="https://www.longwoodpharmacy.com/wp-content/uploads/2019/01/The-5-Reasons-Why-You-Should-Secure-Delivery-Services-From-Longwood-Pharmacy.jpg">
+        <div class="text">Caption Four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img class="image" src="https://st3.depositphotos.com/13324256/16920/i/600/depositphotos_169202350-stock-photo-medicine-in-blister-packs.jpg">
+        <div class="text">Caption Five</div>
+      </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+
+      <!-- Optional JavaScript -->
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 3 seconds
+        }
+        </script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   </body>
+
+</html>
